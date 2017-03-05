@@ -1,0 +1,10 @@
+framework module HashAlgorithm {
+  umbrella header "HashAlgorithm.h"
+
+  export *
+  module * { export * }
+}
+
+module HashAlgorithm.Swift {
+    header "HashAlgorithm-Swift.h"
+}

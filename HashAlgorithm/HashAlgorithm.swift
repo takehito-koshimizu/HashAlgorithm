@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol HashAlgorithm {
+public protocol HashAlgorithm {
     init()
     mutating func consume<S: Sequence>(bytes: S) where S.Iterator.Element == UInt8
     var finalValue: Int { get }

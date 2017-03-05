@@ -15,7 +15,7 @@ public struct FNV1AHash: HashAlgorithm {
 
     public init() {}
 
-    mutating func consume<S: Sequence>(bytes: S) where S.Iterator.Element == UInt8 {
+    public mutating func consume<S: Sequence>(bytes: S) where S.Iterator.Element == UInt8 {
         for byte in bytes {
             hash = (hash ^ UInt64(byte)) &* prime
         }
