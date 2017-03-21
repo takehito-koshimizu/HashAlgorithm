@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1F22091E816AE70052FE40 /* HashAlgorithmMac.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F22071E816AE70052FE40 /* HashAlgorithmMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB1F220D1E816B2A0052FE40 /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB23B2801E6BE5E1007BBFEE /* HashAlgorithm.swift */; };
+		AB1F220E1E816B2E0052FE40 /* FNV1AHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB23B2821E6BE602007BBFEE /* FNV1AHash.swift */; };
+		AB1F22181E816BAC0052FE40 /* HashAlgorithmWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F22161E816BAC0052FE40 /* HashAlgorithmWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB1F221C1E816BBB0052FE40 /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB23B2801E6BE5E1007BBFEE /* HashAlgorithm.swift */; };
+		AB1F221D1E816BBE0052FE40 /* FNV1AHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB23B2821E6BE602007BBFEE /* FNV1AHash.swift */; };
 		AB23B27A1E6BE59C007BBFEE /* HashAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = AB23B2781E6BE59C007BBFEE /* HashAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB23B2811E6BE5E1007BBFEE /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB23B2801E6BE5E1007BBFEE /* HashAlgorithm.swift */; };
 		AB23B2831E6BE602007BBFEE /* FNV1AHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB23B2821E6BE602007BBFEE /* FNV1AHash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB1F22051E816AE70052FE40 /* HashAlgorithmMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashAlgorithmMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1F22071E816AE70052FE40 /* HashAlgorithmMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashAlgorithmMac.h; sourceTree = "<group>"; };
+		AB1F22081E816AE70052FE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1F22141E816BAC0052FE40 /* HashAlgorithmWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashAlgorithmWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1F22161E816BAC0052FE40 /* HashAlgorithmWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashAlgorithmWatch.h; sourceTree = "<group>"; };
+		AB1F22171E816BAC0052FE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB23B2751E6BE59C007BBFEE /* HashAlgorithm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HashAlgorithm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB23B2781E6BE59C007BBFEE /* HashAlgorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashAlgorithm.h; sourceTree = "<group>"; };
 		AB23B2791E6BE59C007BBFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -21,6 +33,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AB1F22011E816AE70052FE40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1F22101E816BAC0052FE40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB23B2711E6BE59C007BBFEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,10 +57,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB1F22061E816AE70052FE40 /* HashAlgorithmMac */ = {
+			isa = PBXGroup;
+			children = (
+				AB1F22071E816AE70052FE40 /* HashAlgorithmMac.h */,
+				AB1F22081E816AE70052FE40 /* Info.plist */,
+			);
+			path = HashAlgorithmMac;
+			sourceTree = "<group>";
+		};
+		AB1F22151E816BAC0052FE40 /* HashAlgorithmWatch */ = {
+			isa = PBXGroup;
+			children = (
+				AB1F22161E816BAC0052FE40 /* HashAlgorithmWatch.h */,
+				AB1F22171E816BAC0052FE40 /* Info.plist */,
+			);
+			path = HashAlgorithmWatch;
+			sourceTree = "<group>";
+		};
 		AB23B26B1E6BE59C007BBFEE = {
 			isa = PBXGroup;
 			children = (
 				AB23B2771E6BE59C007BBFEE /* HashAlgorithm */,
+				AB1F22061E816AE70052FE40 /* HashAlgorithmMac */,
+				AB1F22151E816BAC0052FE40 /* HashAlgorithmWatch */,
 				AB23B2761E6BE59C007BBFEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				AB23B2751E6BE59C007BBFEE /* HashAlgorithm.framework */,
+				AB1F22051E816AE70052FE40 /* HashAlgorithmMac.framework */,
+				AB1F22141E816BAC0052FE40 /* HashAlgorithmWatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +109,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		AB1F22021E816AE70052FE40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1F22091E816AE70052FE40 /* HashAlgorithmMac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1F22111E816BAC0052FE40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1F22181E816BAC0052FE40 /* HashAlgorithmWatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB23B2721E6BE59C007BBFEE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,6 +136,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AB1F22041E816AE70052FE40 /* HashAlgorithmMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1F220C1E816AE70052FE40 /* Build configuration list for PBXNativeTarget "HashAlgorithmMac" */;
+			buildPhases = (
+				AB1F22001E816AE70052FE40 /* Sources */,
+				AB1F22011E816AE70052FE40 /* Frameworks */,
+				AB1F22021E816AE70052FE40 /* Headers */,
+				AB1F22031E816AE70052FE40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HashAlgorithmMac;
+			productName = HashAlgorithmMac;
+			productReference = AB1F22051E816AE70052FE40 /* HashAlgorithmMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB1F22131E816BAC0052FE40 /* HashAlgorithmWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1F22191E816BAC0052FE40 /* Build configuration list for PBXNativeTarget "HashAlgorithmWatch" */;
+			buildPhases = (
+				AB1F220F1E816BAC0052FE40 /* Sources */,
+				AB1F22101E816BAC0052FE40 /* Frameworks */,
+				AB1F22111E816BAC0052FE40 /* Headers */,
+				AB1F22121E816BAC0052FE40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HashAlgorithmWatch;
+			productName = HashAlgorithmWatch;
+			productReference = AB1F22141E816BAC0052FE40 /* HashAlgorithmWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		AB23B2741E6BE59C007BBFEE /* HashAlgorithm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB23B27D1E6BE59C007BBFEE /* Build configuration list for PBXNativeTarget "HashAlgorithm" */;
@@ -99,6 +199,14 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Takehito Koshimizu";
 				TargetAttributes = {
+					AB1F22041E816AE70052FE40 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					AB1F22131E816BAC0052FE40 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					AB23B2741E6BE59C007BBFEE = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
@@ -119,11 +227,27 @@
 			projectRoot = "";
 			targets = (
 				AB23B2741E6BE59C007BBFEE /* HashAlgorithm */,
+				AB1F22041E816AE70052FE40 /* HashAlgorithmMac */,
+				AB1F22131E816BAC0052FE40 /* HashAlgorithmWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AB1F22031E816AE70052FE40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1F22121E816BAC0052FE40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB23B2731E6BE59C007BBFEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +258,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AB1F22001E816AE70052FE40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1F220E1E816B2E0052FE40 /* FNV1AHash.swift in Sources */,
+				AB1F220D1E816B2A0052FE40 /* HashAlgorithm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB1F220F1E816BAC0052FE40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1F221D1E816BBE0052FE40 /* FNV1AHash.swift in Sources */,
+				AB1F221C1E816BBB0052FE40 /* HashAlgorithm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB23B2701E6BE59C007BBFEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +288,96 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		AB1F220A1E816AE70052FE40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HashAlgorithmMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.pointerexample.HashAlgorithmMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AB1F220B1E816AE70052FE40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = HashAlgorithmMac/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.pointerexample.HashAlgorithmMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AB1F221A1E816BAC0052FE40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HashAlgorithmWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.pointerexample.HashAlgorithmWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		AB1F221B1E816BAC0052FE40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HashAlgorithmWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.pointerexample.HashAlgorithmWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 		AB23B27B1E6BE59C007BBFEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -287,6 +519,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AB1F220C1E816AE70052FE40 /* Build configuration list for PBXNativeTarget "HashAlgorithmMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1F220A1E816AE70052FE40 /* Debug */,
+				AB1F220B1E816AE70052FE40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB1F22191E816BAC0052FE40 /* Build configuration list for PBXNativeTarget "HashAlgorithmWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1F221A1E816BAC0052FE40 /* Debug */,
+				AB1F221B1E816BAC0052FE40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AB23B26F1E6BE59C007BBFEE /* Build configuration list for PBXProject "HashAlgorithm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
